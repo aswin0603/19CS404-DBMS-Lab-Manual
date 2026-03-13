@@ -118,6 +118,7 @@ where category = 'Food' and quantity<reorder_lvl*0.5;
 ```
 
 **Output:**
+
 <img width="1166" height="167" alt="image" src="https://github.com/user-attachments/assets/7e1af73e-4016-4369-8d75-0a38d4c11339" />
 
 
@@ -140,6 +141,7 @@ WHERE city = 'London' AND grade > 200;
 ```
 
 **Output:**
+
 <img width="954" height="202" alt="image" src="https://github.com/user-attachments/assets/38d72c1e-76e1-4492-a808-835c7a29a5f5" />
 
 
@@ -168,6 +170,7 @@ UPDATE EMPLOYEES SET salary = salary + 500, email = 'updated' WHERE job_id = 'SA
 ```
 
 **Output:**
+
 <img width="1229" height="297" alt="image" src="https://github.com/user-attachments/assets/9b4ce3ca-8d9a-41f8-b3d5-757f2965af3a" />
 
 
@@ -205,6 +208,7 @@ where department_id IN (40, 90, 110);
 ```
 
 **Output:**
+
 <img width="940" height="253" alt="image" src="https://github.com/user-attachments/assets/9959a45c-33a2-4faa-80cc-d3d51596866b" />
 
 
@@ -222,6 +226,7 @@ UPDATE products SET reorder_lvl = 20 WHERE quantity < 10 AND category = 'Snacks'
 ```
 
 **Output:**
+
 <img width="1239" height="333" alt="image" src="https://github.com/user-attachments/assets/c2304c0f-7873-4b61-971f-f3bb6f7a45a7" />
 
 
@@ -242,6 +247,7 @@ FROM Calculations;
 ```
 
 **Output:**
+
 <img width="610" height="332" alt="image" src="https://github.com/user-attachments/assets/65c0f139-3af0-4db1-9e0d-962ce17103b5" />
 
 
@@ -258,6 +264,7 @@ DELETE FROM Customer WHERE CUST_COUNTRY NOT IN ('UK', 'USA', 'Canada') AND GRADE
 ```
 
 **Output:**
+
 <img width="1060" height="253" alt="image" src="https://github.com/user-attachments/assets/5420267e-f4e2-43fa-82a0-4682401a888b" />    \
 
 <img width="1101" height="249" alt="image" src="https://github.com/user-attachments/assets/5538e5dc-d37d-4169-9317-f35f58889bdf" />
