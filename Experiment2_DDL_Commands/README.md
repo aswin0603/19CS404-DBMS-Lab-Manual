@@ -105,123 +105,206 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+Write an SQL Query to add the attributes designation, net_salary, and dob to the Companies table with the following data types:
+designation as VARCHAR(50)
+net_salary as NUMBER
+dob as DATE
 
 ```sql
--- Paste your SQL code below for Question 1
+alter table Companies add designation varchar(50);
+alter table Companies add net_salary number;
+alter table Companies add dob date;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1147" height="224" alt="image" src="https://github.com/user-attachments/assets/9d5fecfb-39b8-49ce-a5d3-2f5d3a479954" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+Insert the below data into the Books table, allowing the Publisher and Year columns to take their default values.
+
+ISBN             Title                 Author
+---------------  --------------------  ---------------
+978-6655443321   Big Data Analytics    Karen Adams
+
+Note: The Publisher and Year columns will use their default values.
 
 ```sql
--- Paste your SQL code below for Question 2
+INSERT INTO Books (ISBN, Title, Author) VALUES ('978-6655443321', 'Big Data Analytics', 'Karen Adams');
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1113" height="201" alt="image" src="https://github.com/user-attachments/assets/abe0a9c1-7978-4e29-9a2d-920f18168be7" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+Write a SQL query to Add a new ParentsNumber column  as number and Adhar_Number as Number in the Student_details table.
 
 ```sql
--- Paste your SQL code below for Question 3
+alter table Student_details add ParentsNumber number;
+alter table Student_details add Adhar_Number number;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1171" height="201" alt="image" src="https://github.com/user-attachments/assets/5bfd14fd-1d00-467a-85ed-b7845906fc15" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+Create a new table named item with the following specifications and constraints:
+item_id as TEXT and as primary key.
+item_desc as TEXT.
+rate as INTEGER.
+icom_id as TEXT with a length of 4.
+icom_id is a foreign key referencing com_id in the company table.
+The foreign key should set NULL on updates and deletes.
+item_desc and rate should not accept NULL.
 
 ```sql
--- Paste your SQL code below for Question 4
+create table item(
+    item_id text primary key,
+    item_desc text,
+    rate integer,
+    icom_id text(4),
+    foreign key (icom_id) references company(com_id) ON UPDATE SET NULL ON DELETE SET NULL
+);
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1033" height="179" alt="image" src="https://github.com/user-attachments/assets/6e184cf7-adeb-420f-96b1-35e13d414bba" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+Insert all products from Discontinued_products into Products.
+Table attributes are ProductID, ProductName, Price, Stock
 
 ```sql
--- Paste your SQL code below for Question 5
+INSERT INTO Products (ProductID, ProductName, Price, Stock)
+SELECT ProductID, ProductName, Price, Stock FROM Discontinued_products;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="851" height="136" alt="image" src="https://github.com/user-attachments/assets/19768c9c-02d7-449e-8400-8843fdf83235" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+Create a table named Customers with the following columns:
+
+CustomerID as INTEGER
+Name as TEXT
+Email as TEXT
+JoinDate as DATETIME
 
 ```sql
--- Paste your SQL code below for Question 6
+CREATE TABLE Customers(
+    CustomerID INTEGER,
+    Name TEXT,
+    Email TEXT,
+    JoinDate DATETIME
+);
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1058" height="160" alt="image" src="https://github.com/user-attachments/assets/e8fad386-9658-4081-a00a-acd686beeb31" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+Create a table named Products with the following constraints:
+ProductID as INTEGER should be the primary key.
+ProductName as TEXT should be unique and not NULL.
+Price as REAL should be greater than 0.
+StockQuantity as INTEGER should be non-negative.
 
 ```sql
--- Paste your SQL code below for Question 7
+create table Products(
+    ProductID integer primary key,
+    ProductName text unique not null,
+    Price real CHECK (Price>0),
+    StockQuantity integer check(StockQuantity > 0)
+);
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1145" height="102" alt="image" src="https://github.com/user-attachments/assets/d70c99aa-4e77-43fe-a934-97f1b5b3ae0d" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+Create a table named Orders with the following columns:
+
+OrderID as INTEGER
+OrderDate as TEXT
+CustomerID as INTEGER
 
 ```sql
--- Paste your SQL code below for Question 8
+CREATE TABLE Orders(
+    OrderID INTEGER,
+    OrderDate TEXT,
+    CustomerID INTEGER
+);
 ```
 
 **Output:**
+<img width="1188" height="203" alt="image" src="https://github.com/user-attachments/assets/511bb59b-76e1-402a-9305-02f69948192c" />
 
-![Output8](output.png)
 
 **Question 9**
 ---
--- Paste Question 9 here
+Insert the below data into the Customers table, allowing the City and ZipCode columns to take their default values.
+
+CustomerID  Name          Address
+----------  ------------  ----------
+304         Peter Parker  Spider St      
+
+Note: The City and ZipCode columns will use their default values.
+ 
 
 ```sql
--- Paste your SQL code below for Question 9
+INSERT INTO Customers (CustomerID, Name, Address) VALUES ('304', 'Peter Parker', 'Spider St');
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1001" height="218" alt="image" src="https://github.com/user-attachments/assets/2f4af6ef-da12-4d86-b89e-8680af747a65" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+Create a new table named item with the following specifications and constraints:
+item_id as TEXT and as primary key.
+item_desc as TEXT.
+rate as INTEGER.
+icom_id as TEXT with a length of 4.
+icom_id is a foreign key referencing com_id in the company table.
+The foreign key should cascade updates and deletes.
+item_desc and rate should not accept NULL.
 
 ```sql
--- Paste your SQL code below for Question 10
+create table item(
+    item_id text primary key,
+    item_desc text,
+    rate integer,
+    icom_id text(4),
+    foreign key (icom_id) references company(com_id) ON UPDATE CASCADE ON DELETE CASCADE
+);
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1245" height="213" alt="image" src="https://github.com/user-attachments/assets/7f013714-b032-431c-93d7-7f29caa676cc" />
+
 
 
 ## RESULT
