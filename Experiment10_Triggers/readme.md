@@ -69,6 +69,9 @@ SELECT * FROM employee_log;
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
 
 **Output:**
+
+![alt text](10-01.png)
+
 ---
 
 ## 2. Write a trigger to prevent deletion of records from a sensitive table.
@@ -102,6 +105,8 @@ DELETE FROM sensitive_data WHERE record_id = 1;
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
 
 **Output:**
+
+![alt text](10-02.png)
 
 ---
 
@@ -153,7 +158,11 @@ SELECT product_id, name, created_at, last_modified FROM products;
 **Output:**
 * __Before Updating the record__
 
+![alt text](10-03-01.png)
+
 * __After Updating the record__
+
+![alt text](10-03-02.png)
 
 
 ---
@@ -207,8 +216,14 @@ SELECT * FROM audit_log;
 * __First Update__
 
 
+![alt text](10-04-01.png)
+
+
 
 * __Second Update__
+
+
+![alt text](10-04-02.png)
 
 
 ---
@@ -249,6 +264,8 @@ INSERT INTO employee6(employee_id, first_name, dept_no, salary) VALUES (1, 'Bob'
 - If the inserted salary in the `employees` table is below the condition (e.g., salary < 3000), the insert operation is blocked, and an error message is raised, such as: `ERROR: Salary below minimum threshold.`
 
 **Output:**
+
+![alt text](10-05.png)
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.

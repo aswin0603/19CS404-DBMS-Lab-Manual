@@ -83,6 +83,8 @@ Square of 6 is 36
 
 **Output:**
 
+![alt text](09-01.png)
+
 ---
 
 ## 2. Write a PL/SQL Function to Return the Factorial of a Number
@@ -131,6 +133,8 @@ Factorial of 5 is 120
 
 **Output:**
 
+![alt text](09-02.png)
+
 ---
 
 ## 3. Write a PL/SQL Procedure to Check Whether a Number is Even or Odd
@@ -166,6 +170,8 @@ END;
 12 is Even
 
 **Output:**
+
+![alt text](09-03.png)
 
 ---
 
@@ -215,6 +221,8 @@ Reversed number of 1234 is 4321
 
 **Output:**
 
+![alt text](09-04.png)
+
 ---
 
 ## 5. Write a PL/SQL Procedure to Display the Multiplication Table of a Number
@@ -256,6 +264,7 @@ Multiplication table of 5:
 
 **Output:**
 
+![alt text](09-05.png)
 
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
