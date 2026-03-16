@@ -191,12 +191,12 @@ The program should display the employee details or an error message.
 
 #### 1.
 
-![alt text](../../08-01-01.png)
+![alt text](08-01-01.png)
 
 
 #### 2.
 
-![alt text](../../08-01-02.png)
+![alt text](08-01-02.png)
 
 ---
 
@@ -362,12 +362,12 @@ The program should display the employee details within the specified salary rang
 
 #### 1.
 
-![alt text](../../08-02-01.png)
+![alt text](08-02-01.png)
 
 
 #### 2.
 
-![alt text](../../08-02-02.png)
+![alt text](08-02-02.png)
 
 ---
 
@@ -495,12 +495,12 @@ The program should display employee names with their department numbers or the a
 
 #### 1.
 
-![alt text](../../08-03-01.png)
+![alt text](08-03-01.png)
 
 
 #### 2.
 
-![alt text](../../08-03-02.png)
+![alt text](08-03-02.png)
 
 
 ---
@@ -638,12 +638,12 @@ The program should display employee records or the appropriate error message if 
 
 #### 1.
 
-![alt text](../../08-04-01.png)
+![alt text](08-04-01.png)
 
 
 #### 2.
 
-![alt text](../../08-04-02.png)
+![alt text](08-04-02.png)
 
 ---
 
@@ -731,7 +731,7 @@ The program should update employee salaries and display a message, or it should 
 
 **Output:**
 
-![alt text](../../08-05.png)
+![alt text](08-05.png)
 
 ---
 

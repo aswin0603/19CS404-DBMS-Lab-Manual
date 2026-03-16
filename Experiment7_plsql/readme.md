@@ -50,7 +50,7 @@ END;
 ```
 **Output:**
 
-![alt text](../../07_01.png)
+![alt text](07_01.png)
 
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
@@ -82,7 +82,7 @@ END;
 ```
 **Output:**
 
-![alt text](../../07_02.png)
+![alt text](07_02.png)
 
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
@@ -122,7 +122,7 @@ END;
 ```
 **Output:**
 
-![alt text](../../07_03.png)
+![alt text](07_03.png)
 
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
@@ -158,7 +158,7 @@ END;
 ```
 **Output:**
 
-![alt text](../../07_04.png)
+![alt text](07_04.png)
 
 
 ## 5. Write a PL/SQL program to find the largest of three numbers
@@ -196,7 +196,7 @@ END;
 ```
 **Output:**
 
-![alt text](../../07_05.png)
+![alt text](07_05.png)
 
 
 ## RESULT
